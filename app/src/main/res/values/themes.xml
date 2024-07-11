@@ -5,5 +5,7 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.KOTLIN_OnlineShop" parent="Base.Theme.KOTLIN_OnlineShop" />
+    <style name="Theme.KOTLIN_OnlineShop" parent="Base.Theme.KOTLIN_OnlineShop">
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
 </resources>

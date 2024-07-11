@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">KOTLIN_OnlineShop</string>
+    <string name="intro_title">Tarzına Adım At <font color="#6033ba">\n Ayakkabı Dünyasına Stil Ver</font></string>
+    <string name="intro_text">En İyi Markaların En Yeni Stillerine Göz Atın\nKişiselleştirilmiş Öneriler Alın\nHızlı ve Ücretsiz Gönderimin Keyfini Çıkartın</string>
+    <string name="intro_signin">Hesabın yok mu? <font color="#6033ba">Kayıt Ol</font></string>
 </resources>
