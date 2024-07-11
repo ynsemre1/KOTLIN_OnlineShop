@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "785522700946",
+    "project_id": "onlineshop-b543d",
+    "storage_bucket": "onlineshop-b543d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785522700946:android:2e2e782b12bbc4673cec4b",
+        "android_client_info": {
+          "package_name": "com.example.kotlin_onlineshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRh5J7XEy08k4ntq7t32iVOSg_26wUafY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
