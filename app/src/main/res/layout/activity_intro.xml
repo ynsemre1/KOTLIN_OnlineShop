@@ -47,7 +47,7 @@
                 android:id="@+id/startBtn"
                 style = "@android:style/Widget.Button"
                 android:layout_margin = "32dp"
-                android:background="@drawable/purple_button_bg"
+                android:background="@drawable/purple_bg"
                 android:textColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
