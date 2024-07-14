@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -89,21 +89,22 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                    android:id="@+id/dotIndicator"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
+                    android:visibility="gone"
                     app:dotsColor="@color/lightGrey"
                     app:dotsCornerRadius="8dp"
                     app:dotsSize="6dp"
                     app:dotsSpacing="2dp"
                     app:dotsWidthFactor="2.5"
-                    app:selectedDotColor="@color/purple"
-                    android:visibility="gone"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/viewpagerSlider"
-                    tools:visibility="visible"/>
+                    app:selectedDotColor="@color/purple"
+                    tools:visibility="visible" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

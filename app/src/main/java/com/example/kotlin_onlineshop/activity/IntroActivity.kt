@@ -1,13 +1,7 @@
 package com.example.kotlin_onlineshop.activity
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.kotlin_onlineshop.MainActivity
-import com.example.kotlin_onlineshop.R
 import com.example.kotlin_onlineshop.databinding.ActivityIntroBinding
 
 class IntroActivity : BaseActivity() {
