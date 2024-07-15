@@ -3,11 +3,13 @@ package com.example.kotlin_onlineshop.activity
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.Observer
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import com.example.kotlin_onlineshop.Adapter.BrandAdapter
+import com.example.kotlin_onlineshop.Adapter.PopularAdapter
 import com.example.kotlin_onlineshop.Model.SliderModel
 import com.example.kotlin_onlineshop.Adapter.SliderAdapter
 import com.example.kotlin_onlineshop.Model.BrandModel
@@ -24,6 +26,7 @@ class MainActivity : BaseActivity() {
 
         initBanner()
         initBrand()
+        initPopular()
     }
 
     private fun initBanner() {
@@ -61,5 +64,15 @@ class MainActivity : BaseActivity() {
             binding.progressBarBrand.visibility = View.GONE
         })
         viewModel.loadBrand()
+    }
+
+    private fun initPopular(){
+        binding.progressBarPopular.visibility = View.VISIBLE
+        viewModel.popular.observe(this, Observer {
+            binding.viewPopular.layoutManager = GridLayoutManager(this@MainActivity, 2)
+            binding.viewPopular.adapter = PopularAdapter(it)
+            binding.progressBarPopular.visibility = View.GONE
+        })
+        viewModel.loadPupolar()
     }
 }
