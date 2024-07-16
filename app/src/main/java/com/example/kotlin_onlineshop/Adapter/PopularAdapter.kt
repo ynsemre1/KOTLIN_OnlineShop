@@ -8,10 +8,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.request.RequestOptions
-import com.example.kotlin_onlineshop.Model.ItemModel
+import com.example.kotlin_onlineshop.Model.ItemsModel
+import com.example.kotlin_onlineshop.activity.DetailActivity
 import com.example.kotlin_onlineshop.databinding.ViewholderRecommendedBinding
 
-class PopularAdapter(val items : MutableList<ItemModel>):
+class PopularAdapter(val items : MutableList<ItemsModel>):
     RecyclerView.Adapter<PopularAdapter.ViewHolder>() {
     private var context: Context? =null
     class ViewHolder(val binding : ViewholderRecommendedBinding) : RecyclerView.ViewHolder(binding.root)
@@ -31,6 +32,12 @@ class PopularAdapter(val items : MutableList<ItemModel>):
             .load(items[position].picUrl[0])
             .apply(requestOptions)
             .into(holder.binding.pic)
+
+        holder.itemView.setOnClickListener{
+            val intent= Intent(holder.itemView.context, DetailActivity::class.java)
+            intent.putExtra("object", items[position])
+            holder.itemView.context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int = items.size

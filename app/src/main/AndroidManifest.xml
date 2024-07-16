@@ -13,7 +13,7 @@
         android:theme="@style/Theme.KOTLIN_OnlineShop"
         tools:targetApi="31">
         <activity
-            android:name=".activity.DeatilActivity"
+            android:name=".activity.DetailActivity"
             android:exported="false" />
         <activity
             android:name=".activity.BaseActivity"
