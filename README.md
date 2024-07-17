@@ -5,14 +5,14 @@ This is a Kotlin-based Online Shop application consisting of three primary scree
 ## Screenshots
 
 ### Main Screen
-![Main Screen](<img width="355" alt="MainActivity" src="https://github.com/user-attachments/assets/4e7dfd09-13d7-49eb-bb0f-0967980428af">)
+<img width="355" alt="MainActivity" src="https://github.com/user-attachments/assets/4e7dfd09-13d7-49eb-bb0f-0967980428af">
 
 ### Product Detail Screen
-![Product Detail](<img width="362" alt="DetailActivity" src="https://github.com/user-attachments/assets/711acc75-e33a-4b41-80c3-7baadca8fcdd">)
+<img width="362" alt="DetailActivity" src="https://github.com/user-attachments/assets/711acc75-e33a-4b41-80c3-7baadca8fcdd">
 
 
 ### Cart Screen
-![Cart](<img width="362" alt="CartActivity" src="https://github.com/user-attachments/assets/d5e8bb74-3e11-4f47-ac7a-672e4293f725">)
+<img width="362" alt="CartActivity" src="https://github.com/user-attachments/assets/d5e8bb74-3e11-4f47-ac7a-672e4293f725">
 
 
 ## Features
